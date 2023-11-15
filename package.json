@@ -11,15 +11,15 @@
   "dependencies": {
     "@plasmicapp/loader-nextjs": "^1.0.341",
     "next": "14.0.2",
-    "react": "^18",
-    "react-dom": "^18"
+    "react": "18",
+    "react-dom": "18"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
+    "@types/node": "18",
+    "@types/react": "18",
+    "@types/react-dom": "18",
+    "eslint": "8",
     "eslint-config-next": "14.0.2",
-    "typescript": "^5"
+    "typescript": "5"
   }
 }

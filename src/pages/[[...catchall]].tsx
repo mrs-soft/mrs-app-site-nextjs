@@ -19,7 +19,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     paths: pages.map((page) => ({
       params: { catchall: page.path.substring(1).split('/') }
     })),
-    fallback: 'blocking'
+    fallback: false
   };
 };
 
@@ -61,7 +61,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
     // Using incremental static regeneration, will invalidate this page
     // after 300s (no deploy webhooks needed)
-    revalidate: 300
+    // revalidate: 300
   };
 };
 
