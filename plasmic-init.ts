@@ -1,4 +1,5 @@
 import { initPlasmicLoader } from "@plasmicapp/loader-nextjs";
+import { Widget } from "./src/components/widget/widget";
 export const PLASMIC = initPlasmicLoader({
   projects: [
     {
@@ -10,3 +11,8 @@ export const PLASMIC = initPlasmicLoader({
   // Disable for production to ensure you render only published changes.
   preview: false,
 })
+
+PLASMIC.registerComponent(Widget, {
+  name: 'Widget',
+  props: {}
+});
