@@ -1,6 +1,11 @@
 import { useEffect } from "react"
 
-export const Widget = ({className}: any) => {
+interface IWidget {
+  className: string
+  productId: string
+}
+
+export const Widget = ({className, productId}: IWidget) => {
   useEffect(() => {
     const head = document.querySelector("body")
     const script = document.createElement("script")
@@ -12,23 +17,17 @@ export const Widget = ({className}: any) => {
     head?.appendChild(script)
     head?.appendChild(link)
 
-    // window.WidgetConfig = {
-    //   subscriptionId: "3",
-    // }
+    if (productId) 
+      window.WidgetConfig = {
+        productId,
+      }
 
     // return () => {
     //   head?.removeChild(script)
     //   head?.removeChild(link)
     // }
-  }, [])
+  }, [productId])
 
-  // useEffect(() => {
-  //   if (!window.NewWidget) return
-
-  //   console.log(window.NewWidget)
-  //   window.NewWidget.init()
-  // }, [window.NewWidget])
 
   return <div className={`saas_shop_tariffs ${className}`}></div>
-
 }
