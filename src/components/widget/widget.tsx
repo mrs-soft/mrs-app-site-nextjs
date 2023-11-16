@@ -6,8 +6,8 @@ export const Widget = ({className}: any) => {
     const script = document.createElement("script")
     const link = document.createElement("link")
 
-    script.setAttribute("src", `${process.env.NEXT_PUBLIC_API_URL}assets/js/index.js`)
-    link.setAttribute("href", `${process.env.NEXT_PUBLIC_API_URL}assets/style/widget.css`)
+    script.setAttribute("src", process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}assets/js/index.js` : `assets/js/index.js`)
+    link.setAttribute("href", process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}assets/style/widget.css` : `assets/style/widget.css`)
     link.setAttribute("rel", "stylesheet")
     head?.appendChild(script)
     head?.appendChild(link)
