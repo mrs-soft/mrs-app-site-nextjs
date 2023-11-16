@@ -13,11 +13,6 @@ const nextConfig = {
   //   plasmicProjectId: process.env.NEXT_PUBLIC_PLASMIC_PROJECT_ID,
   //   plasmicProjectToken: process.env.NEXT_PUBLIC_PLASMIC_PROJECT_TOKEN
   // }
-  // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-  // trailingSlash: true,
-
-  // Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
-  // skipTrailingSlashRedirect: true,
 }
 
 module.exports = nextConfig
