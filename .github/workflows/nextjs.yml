@@ -29,8 +29,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env: 
-      NEXT_PUBLIC_PLASMIC_PROJECT_ID: ${{ secret.NEXT_PUBLIC_PLASMIC_PROJECT_ID }}
-      NEXT_PUBLIC_PLASMIC_PROJECT_TOKEN: ${{ secret.NEXT_PUBLIC_PLASMIC_PROJECT_TOKEN }}
+      NEXT_PUBLIC_PLASMIC_PROJECT_ID: ${{ secrets.NEXT_PUBLIC_PLASMIC_PROJECT_ID }}
+      NEXT_PUBLIC_PLASMIC_PROJECT_TOKEN: ${{ secrets.NEXT_PUBLIC_PLASMIC_PROJECT_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
