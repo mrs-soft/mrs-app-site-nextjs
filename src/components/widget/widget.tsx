@@ -22,10 +22,10 @@ export const Widget = ({className, productId}: IWidget) => {
         productId,
       }
 
-    // return () => {
-    //   head?.removeChild(script)
-    //   head?.removeChild(link)
-    // }
+    return () => {
+      head?.removeChild(script)
+      head?.removeChild(link)
+    }
   }, [productId])
 
 
