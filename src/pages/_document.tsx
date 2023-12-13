@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <script type="text/javascript" src={metrika} />
+        <script type="text/javascript" src={metrika} async />
         <noscript>
           <div>
             <img
