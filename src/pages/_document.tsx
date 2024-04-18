@@ -18,6 +18,7 @@ export default function Document() {
             />
           </div>
         </noscript>
+        <meta name="yandex-verification" content="23e07f627b8a99f0" />
       </Head>
       <body>
         <Main />
