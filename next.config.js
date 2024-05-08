@@ -8,6 +8,7 @@ const nextConfig = {
   basePath: isProd ? "" : "",
   output: "export",
   distDir: "dist",
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
