@@ -3,7 +3,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   const metrika = process.env.NEXT_PUBLIC_API_URL
     ? `${process.env.NEXT_PUBLIC_API_URL}assets/js/metrika.js`
-    : "assets/js/metrika.js";
+    : "/assets/js/metrika.js";
 
   return (
     <Html>
