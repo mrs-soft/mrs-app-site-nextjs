@@ -1,0 +1,17 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "android_app",
+            "package_name": "com.mrsapp.platform",
+            "sha256_cert_fingerprints": [
+                "6F:54:0B:31:BF:DE:3A:35:CD:33:F9:9A:5D:F1:5A:F2:F0:72:85:52:A6:CB:EB:C7:C4:AE:29:66:24:36:3E:F7",
+                "FA:C6:17:45:DC:09:03:78:6F:B9:ED:E6:2A:96:2B:39:9F:73:48:F0:BB:6F:89:9B:83:32:66:75:91:03:3B:9C",
+                "0D:37:A5:B8:6E:20:8B:4B:B4:B6:77:96:8F:25:BE:91:78:61:F9:C7:9A:C9:15:18:46:69:5A:E2:FF:6F:86:5B"
+            ]
+        }
+    }
+]
+  
