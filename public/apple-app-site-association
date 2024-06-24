@@ -1,0 +1,17 @@
+{
+    "applinks":
+    {
+        "apps":
+        [],
+        "details":
+        [
+            {
+                "appID": "GNP4MFWD5D.com.mrsapp.platform",
+                "paths":
+                [
+                    "*"
+                ]
+            }
+        ]
+    }
+}
