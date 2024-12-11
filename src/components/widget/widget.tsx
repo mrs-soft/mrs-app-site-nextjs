@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import "saas-shop-widget/dist/main.css"
 
 interface IWidget {
   className: string
@@ -7,26 +8,25 @@ interface IWidget {
 
 export const Widget = ({className, productId}: IWidget) => {
   useEffect(() => {
-    const head = document.querySelector("body")
-    const script = document.createElement("script")
-    const link = document.createElement("link")
-
-    script.setAttribute("src", process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}assets/js/index.js` : `/assets/js/index.js`)
-    link.setAttribute("href", process.env.NEXT_PUBLIC_API_URL ? `${process.env.NEXT_PUBLIC_API_URL}assets/style/widget.css` : `/assets/style/widget.css`)
-    link.setAttribute("rel", "stylesheet")
-    head?.appendChild(script)
-    head?.appendChild(link)
-
-    if (productId) 
-      window.WidgetConfig = {
-        productId,
-      }
-
-    // return () => {
-    //   head?.removeChild(script)
-    //   head?.removeChild(link)
-    // }
+    productId && initWidget(productId)
   }, [productId])
+
+  const initWidget = async (id: string) => {
+    const { WidgetSaasShopPresenter } = await import("saas-shop-widget")
+      const config = {
+        productId: id,
+        redirectUrl: process.env.NEXT_PUBLIC_API_REDIRECT_URL || "",
+        api: process.env.NEXT_PUBLIC_SAAS_SHOP_API || "",
+      }
+      const NewWidget = new WidgetSaasShopPresenter({
+        idContainer: '.saas_shop_tariffs',
+        api: config.api,
+        redirectUrl: config.redirectUrl,
+        productId: '710d6023-0945-4060-a573-68e4527590fa',
+        // productId: config.productId,
+      })
+      NewWidget.init(config)
+  }
 
 
   return <div className={`saas_shop_tariffs ${className}`}></div>
