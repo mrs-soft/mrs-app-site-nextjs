@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import "saas-shop-widget/dist/main.css"
+import "@mrs/saas-shop-widget/dist/main.css"
 
 const WIDGET_CLASS = "saas_shop_tariffs"
 
@@ -14,7 +14,7 @@ export const Widget = ({className, productId}: IWidget) => {
   }, [productId])
 
   const initWidget = async (id: string) => {
-    const { WidgetSaasShopPresenter } = await import("saas-shop-widget")
+    const { WidgetSaasShopPresenter } = await import("@mrs/saas-shop-widget")
       const config = {
         productId: id,
         redirectUrl: process.env.NEXT_PUBLIC_API_REDIRECT_URL || "",

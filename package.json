@@ -15,12 +15,12 @@
     "react-dom": "18"
   },
   "devDependencies": {
+    "@mrs/saas-shop-widget": "0.0.1-f46360c0-develop",
     "@types/node": "18",
     "@types/react": "18",
     "@types/react-dom": "18",
     "eslint": "8",
     "eslint-config-next": "14.0.2",
-    "saas-shop-widget": "file:../saas-shop-widget",
     "typescript": "5"
   }
 }
