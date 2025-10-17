@@ -20,3 +20,15 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - [Plasmic](https://www.plasmic.app/) - plasmic documentation
 
+## Выпуск изменений на сайте
+
+### Публикация в Plasmic
+1. Нажимаем на кнопку Publish в правой верхней части экрана.
+2. Кратко описываем в поле Description изменения, которые внесены.
+3. Добавляем тэг production в поле Tags.
+4. Публикуем изменения нажатием кнопки Publish.
+
+### Deploy в Github
+1. Переходим в Actions репозитория
+2. Нажимаем на закреплённый экшен Deploy Next.js site to Pages
+3. На списке workflow запускаем deploy через кнопку Run workflow
