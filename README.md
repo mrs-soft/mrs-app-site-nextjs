@@ -4,15 +4,15 @@
 
 ## Публикация в Plasmic
 1. Запускаем Plasmic [https://studio.plasmic.app/](https://studio.plasmic.app/)
-2. Нажимаем на кнопку Publish в правой верхней части экрана.
-3. Кратко описываем в поле Description изменения, которые внесены.
-4. Добавляем тэг production в поле Tags.
-5. Публикуем изменения нажатием кнопки Publish.
+2. Нажимаем на кнопку `Publish` в правой верхней части экрана.
+3. Кратко описываем в поле `Description` изменения, которые внесены.
+4. Добавляем тэг `production` в поле `Tags`.
+5. Публикуем изменения нажатием кнопки `Publish`.
 
 ## Deploy в Github
-1. Переходим в Actions репозитория
-2. Нажимаем на закреплённый экшен Deploy Next.js site to Pages
-3. На списке workflow запускаем deploy через кнопку Run workflow
+1. Переходим в `Actions` репозитория
+2. Нажимаем на закреплённый экшен `Deploy Next.js site to Pages`
+3. На списке workflow запускаем deploy через кнопку `Run workflow`
 
 ## Getting Started
 
